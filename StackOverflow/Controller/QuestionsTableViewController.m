@@ -16,7 +16,7 @@
 @interface QuestionsTableViewController () <DataFetchDelegate> {
     NSArray *dataResult;
     QuestionsDataObject *dataObject;
-    UIActivityIndicatorView *_activityView;
+    UIActivityIndicatorView *actividtyInd;
 }
 
 @end
@@ -27,6 +27,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    //Display an code loading indicator
+    actividtyInd = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    actividtyInd.alpha = 1.0;
+    [self.view addSubview:actividtyInd];
+    actividtyInd.center = CGPointMake([[UIScreen mainScreen]bounds].size.width/2, [[UIScreen mainScreen]bounds].size.height/2);
+    [actividtyInd startAnimating];//to start animating
+
     dataObject = [[QuestionsDataObject alloc] init];
     dataObject.questionRequest = [[QuestionRequest alloc] init];
     dataObject.questionRequest.delegate = dataObject;
@@ -61,7 +68,7 @@
     if (questionData.accepted_answer_id) {
         cell.acceptedAnswerImage.image =  [UIImage imageNamed: @"greencircle.png"];
     } else {
-        cell.acceptedAnswerImage.image =  [UIImage imageNamed: @"circle"];
+        cell.acceptedAnswerImage.image =  [UIImage imageNamed: @"greycircle.png"];
     }
     
     cell.questionTitle.text = questionData.title;
@@ -78,7 +85,7 @@
     dispatch_async(dispatch_get_main_queue(), ^{
          [self.tableView reloadData];
     });
-    [_activityView stopAnimating];
+    [actividtyInd stopAnimating];
 }
 
 - (void)fetchingDataFailedWithError:(NSError *)error {
