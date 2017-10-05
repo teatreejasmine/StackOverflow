@@ -27,7 +27,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //Display an code loading indicator
+    //Display a code loading indicator
     actividtyInd = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     actividtyInd.alpha = 1.0;
     [self.view addSubview:actividtyInd];
