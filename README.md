@@ -2,7 +2,7 @@
 
  Displays a list of the latest StackOverflow questions that are tagged “ios”
 
-* Questions data is derived from the StackOverflow API (https://api.stackexchange.com/docs/questions) which is used to question information
+* Questions data is derived from the StackOverflow API (https://api.stackexchange.com/docs/questions) which is used to display questions
 
 ## Requirements
 
