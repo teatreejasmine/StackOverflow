@@ -16,7 +16,7 @@
 @interface QuestionsTableViewController () <DataFetchDelegate> {
     NSArray *dataResult;
     QuestionsDataObject *dataObject;
-    UIActivityIndicatorView *actividtyInd;
+    UIActivityIndicatorView *activityIndicator;
 }
 
 @end
@@ -26,13 +26,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     //Display a code loading indicator
-    actividtyInd = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
-    actividtyInd.alpha = 1.0;
-    [self.view addSubview:actividtyInd];
-    actividtyInd.center = CGPointMake([[UIScreen mainScreen]bounds].size.width/2, [[UIScreen mainScreen]bounds].size.height/2);
-    [actividtyInd startAnimating];//to start animating
+    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
+    activityIndicator.alpha = 1.0;
+    [self.view addSubview:activityIndicator];
+    activityIndicator.center = CGPointMake([[UIScreen mainScreen]bounds].size.width/2, [[UIScreen mainScreen]bounds].size.height/2);
+    [activityIndicator startAnimating];
 
     dataObject = [[QuestionsDataObject alloc] init];
     dataObject.questionRequest = [[QuestionRequest alloc] init];
@@ -67,6 +67,7 @@
     //Select image based on whether the answer is accepted or not
     if (questionData.accepted_answer_id) {
         cell.acceptedAnswerImage.image =  [UIImage imageNamed: @"greencircle.png"];
+        
     } else {
         cell.acceptedAnswerImage.image =  [UIImage imageNamed: @"greycircle.png"];
     }
@@ -83,9 +84,10 @@
     dataResult = data;
    
     dispatch_async(dispatch_get_main_queue(), ^{
-         [self.tableView reloadData];
+        [self.tableView reloadData];
+        [activityIndicator stopAnimating];
     });
-    [actividtyInd stopAnimating];
+    
 }
 
 - (void)fetchingDataFailedWithError:(NSError *)error {
