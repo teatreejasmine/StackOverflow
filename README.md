@@ -1,4 +1,4 @@
-# StackOverflow: iOS app for fetching stackoverflow questions tagged ios
+# StackOverflow: iOS app for fetching StackOverflow questions tagged ios
 
  Displays a list of the latest StackOverflow questions that are tagged “ios”
 
