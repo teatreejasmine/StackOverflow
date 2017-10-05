@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		242E24071F84BE7A006707B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E24061F84BE7A006707B2 /* AppDelegate.m */; };
-		242E240A1F84BE7A006707B2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E24091F84BE7A006707B2 /* ViewController.m */; };
 		242E240D1F84BE7A006707B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242E240B1F84BE7A006707B2 /* Main.storyboard */; };
 		242E240F1F84BE7A006707B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 242E240E1F84BE7A006707B2 /* Assets.xcassets */; };
 		242E24121F84BE7A006707B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 242E24101F84BE7A006707B2 /* LaunchScreen.storyboard */; };
 		242E24151F84BE7A006707B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E24141F84BE7A006707B2 /* main.m */; };
 		242E241F1F84BE7A006707B2 /* StackOverflowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E241E1F84BE7A006707B2 /* StackOverflowTests.m */; };
 		242E242A1F84BE7A006707B2 /* StackOverflowUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E24291F84BE7A006707B2 /* StackOverflowUITests.m */; };
+		242E243C1F84BF49006707B2 /* QuestionsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E243B1F84BF49006707B2 /* QuestionsTableViewController.m */; };
+		242E243F1F84BF7A006707B2 /* QuestionsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E243E1F84BF7A006707B2 /* QuestionsCell.m */; };
+		242E24421F84D2F7006707B2 /* QuestionsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E24411F84D2F7006707B2 /* QuestionsData.m */; };
+		242E24461F84D7F8006707B2 /* QuestionsDataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E24451F84D7F8006707B2 /* QuestionsDataObject.m */; };
+		242E24491F84D97E006707B2 /* DataResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E24481F84D97E006707B2 /* DataResult.m */; };
+		242E244F1F84DB7D006707B2 /* QuestionRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 242E244E1F84DB7D006707B2 /* QuestionRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,8 +43,6 @@
 		242E24021F84BE7A006707B2 /* StackOverflow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		242E24051F84BE7A006707B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		242E24061F84BE7A006707B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		242E24081F84BE7A006707B2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		242E24091F84BE7A006707B2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		242E240C1F84BE7A006707B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		242E240E1F84BE7A006707B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		242E24111F84BE7A006707B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +54,20 @@
 		242E24251F84BE7A006707B2 /* StackOverflowUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		242E24291F84BE7A006707B2 /* StackOverflowUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackOverflowUITests.m; sourceTree = "<group>"; };
 		242E242B1F84BE7A006707B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		242E243A1F84BF49006707B2 /* QuestionsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionsTableViewController.h; sourceTree = "<group>"; };
+		242E243B1F84BF49006707B2 /* QuestionsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionsTableViewController.m; sourceTree = "<group>"; };
+		242E243D1F84BF7A006707B2 /* QuestionsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionsCell.h; sourceTree = "<group>"; };
+		242E243E1F84BF7A006707B2 /* QuestionsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionsCell.m; sourceTree = "<group>"; };
+		242E24401F84D2F7006707B2 /* QuestionsData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionsData.h; sourceTree = "<group>"; };
+		242E24411F84D2F7006707B2 /* QuestionsData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionsData.m; sourceTree = "<group>"; };
+		242E24431F84D5B4006707B2 /* DataFetchDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataFetchDelegate.h; sourceTree = "<group>"; };
+		242E24441F84D7F8006707B2 /* QuestionsDataObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionsDataObject.h; sourceTree = "<group>"; };
+		242E24451F84D7F8006707B2 /* QuestionsDataObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionsDataObject.m; sourceTree = "<group>"; };
+		242E24471F84D97E006707B2 /* DataResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataResult.h; sourceTree = "<group>"; };
+		242E24481F84D97E006707B2 /* DataResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataResult.m; sourceTree = "<group>"; };
+		242E244A1F84DA7D006707B2 /* DataDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataDelegate.h; sourceTree = "<group>"; };
+		242E244D1F84DB7D006707B2 /* QuestionRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QuestionRequest.h; sourceTree = "<group>"; };
+		242E244E1F84DB7D006707B2 /* QuestionRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuestionRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +118,11 @@
 		242E24041F84BE7A006707B2 /* StackOverflow */ = {
 			isa = PBXGroup;
 			children = (
+				242E24391F84BF22006707B2 /* Controller */,
+				242E24381F84BF19006707B2 /* View */,
+				242E24371F84BF12006707B2 /* Model */,
 				242E24051F84BE7A006707B2 /* AppDelegate.h */,
 				242E24061F84BE7A006707B2 /* AppDelegate.m */,
-				242E24081F84BE7A006707B2 /* ViewController.h */,
-				242E24091F84BE7A006707B2 /* ViewController.m */,
-				242E240B1F84BE7A006707B2 /* Main.storyboard */,
 				242E240E1F84BE7A006707B2 /* Assets.xcassets */,
 				242E24101F84BE7A006707B2 /* LaunchScreen.storyboard */,
 				242E24131F84BE7A006707B2 /* Info.plist */,
@@ -130,6 +147,42 @@
 				242E242B1F84BE7A006707B2 /* Info.plist */,
 			);
 			path = StackOverflowUITests;
+			sourceTree = "<group>";
+		};
+		242E24371F84BF12006707B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				242E24401F84D2F7006707B2 /* QuestionsData.h */,
+				242E24411F84D2F7006707B2 /* QuestionsData.m */,
+				242E24431F84D5B4006707B2 /* DataFetchDelegate.h */,
+				242E24441F84D7F8006707B2 /* QuestionsDataObject.h */,
+				242E24451F84D7F8006707B2 /* QuestionsDataObject.m */,
+				242E24471F84D97E006707B2 /* DataResult.h */,
+				242E24481F84D97E006707B2 /* DataResult.m */,
+				242E244A1F84DA7D006707B2 /* DataDelegate.h */,
+				242E244D1F84DB7D006707B2 /* QuestionRequest.h */,
+				242E244E1F84DB7D006707B2 /* QuestionRequest.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		242E24381F84BF19006707B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				242E240B1F84BE7A006707B2 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		242E24391F84BF22006707B2 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				242E243A1F84BF49006707B2 /* QuestionsTableViewController.h */,
+				242E243B1F84BF49006707B2 /* QuestionsTableViewController.m */,
+				242E243D1F84BF7A006707B2 /* QuestionsCell.h */,
+				242E243E1F84BF7A006707B2 /* QuestionsCell.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,9 +318,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				242E240A1F84BE7A006707B2 /* ViewController.m in Sources */,
 				242E24151F84BE7A006707B2 /* main.m in Sources */,
+				242E244F1F84DB7D006707B2 /* QuestionRequest.m in Sources */,
+				242E243F1F84BF7A006707B2 /* QuestionsCell.m in Sources */,
+				242E24461F84D7F8006707B2 /* QuestionsDataObject.m in Sources */,
+				242E24421F84D2F7006707B2 /* QuestionsData.m in Sources */,
 				242E24071F84BE7A006707B2 /* AppDelegate.m in Sources */,
+				242E24491F84D97E006707B2 /* DataResult.m in Sources */,
+				242E243C1F84BF49006707B2 /* QuestionsTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
