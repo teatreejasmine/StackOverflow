@@ -26,7 +26,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    
     //Display a code loading indicator
     activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleGray];
     activityIndicator.alpha = 1.0;
@@ -40,7 +40,6 @@
     dataObject.delegate = self;
     
     [dataObject getData];
-    
     
 }
 
@@ -61,7 +60,7 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     QuestionsCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
+    
     QuestionsData *questionData = dataResult[indexPath.row];
     
     //Select image based on whether the answer is accepted or not
@@ -73,7 +72,6 @@
     }
     
     cell.questionTitle.text = questionData.title;
-    [cell.questionTitle sizeToFit];
     cell.answerCount.text = [NSString stringWithFormat:@"%@", questionData.answer_count];
     cell.tags.text =  [questionData.tags componentsJoinedByString:@" "];
    
@@ -93,5 +91,7 @@
 - (void)fetchingDataFailedWithError:(NSError *)error {
     NSLog(@"Error %@; %@", error, [error localizedDescription]);
 }
+
+
 
 @end
